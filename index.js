@@ -2,6 +2,8 @@ let min = document.getElementById('min');
 let sec = document.getElementById('sec');
 let amPm = document.getElementById("am-pm");
 
+let date = Date;
+
 setInterval(() => {
     let secondeValue= parseInt(sec.textContent);
     let minuteValue= parseInt(min.textContent);
@@ -19,7 +21,7 @@ setInterval(() => {
         else if ( amPm.textContent === "pm")
             amPm.textContent = "am";
     }
-    
+
     sec.textContent = (secondeValue < 10 ) ? '0' + secondeValue : secondeValue;
     min.textContent = (minuteValue < 10) ? '0' + minuteValue : minuteValue;
 }, 1000);
