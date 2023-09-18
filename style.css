@@ -1,0 +1,48 @@
+:root {
+    --color-dark: #00001a;
+    --color-yellow : #fece4a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: var(--color-dark);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chrono {
+    background: var(--color-yellow);
+    padding: 20px 40px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    position: relative;
+}
+
+#chrono div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chrono div span {
+    font-size: 32px;
+    color: var(--color-dark);
+    margin: 5px;
+}
+
+#pm-am {
+    position: absolute;
+    margin-top: 5px;
+    bottom: 0;
+    left: 0;
+}
