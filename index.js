@@ -4,7 +4,7 @@ let amPm = document.getElementById("am-pm");
 
 let date = Date;
 
-// We assume that : one minute is equal one seconde just for this code
+// We assume that : one minute is equal one seconde just for fun for this code
 
 setInterval( () => {
     let secondeValue= parseInt(sec.textContent);
